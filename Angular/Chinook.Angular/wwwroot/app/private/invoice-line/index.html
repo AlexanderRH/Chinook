@@ -1,0 +1,57 @@
+﻿<div ng-controller="invoiceLineController as vm">
+    <div ng-show="vm.showCreate" class="alert alert-success alert-dismissable">
+        <a href="" class="close" data-dismiss="alert" arialabel="close">&times;</a>
+        <strong>OK</strong> The invoiceLine was created properly.
+    </div>
+
+    <div>
+        <button ng-click="vm.create();" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
+            <span class="glyphicon glyphicon-plus"></span> Create New InvoiceLine
+        </button>
+    </div>
+
+    <ul uib-pagination
+        total-items="vm.totalRecords"
+        items-per-page="vm.itemsPerPage"
+        ng-model="vm.currentPage"
+        max-size="vm.maxSize"
+        ng-change="vm.pageChanged()"></ul>
+    <div class="row">
+        <invoice-line-card ng-repeat-start="invoiceLine in vm.invoiceLineList "
+                       invoice-line-id="{{::invoiceLine.invoiceLineId}}"
+                       invoice-id="{{::invoiceLine.invoiceId}}"
+                       track-id="{{::invoiceLine.trackId}}"
+                       unit-price="{{::invoiceLine.unitPrice}}"
+                       quantity="{{::invoiceLine.quantity}}"
+                      >
+            <button ng-click="vm.getInvoiceLine(invoiceLine.invoiceLineId); vm.edit();"
+                    data-toggle="modal"
+                    data-target="#modal-container"
+                    class="btn btn-success btn-sm">
+                <span class="glyphicon glyphicon-edit"></span> Edit
+            </button>
+            <button ng-click="vm.getInvoiceLine(invoiceLine.invoiceLineId); vm.delete();"
+                    data-toggle="modal"
+                    data-target="#modal-container"
+                    class="btn btn-danger btn-sm">
+                <span class="glyphicon glyphicon-erase"></span> Delete
+            </button>
+        </invoice-line-card>
+        <div ng-repeat-end ng-if="($index + 1) % 3 == 0" class="clearfix"></div>
+    </div>
+    <ul uib-pagination
+        total-items="vm.totalRecords"
+        items-per-page="vm.itemsPerPage"
+        ng-model="vm.currentPage"
+        max-size="vm.maxSize"
+        ng-change="vm.pageChanged()"></ul>
+    <modal-panel title="{{vm.modalTitle}}"
+                 button-title="{{vm.modalButtonTitle}}"
+                 save-function="vm.modalFunction"
+                 close-function="vm.closeModal"
+                 read-only="vm.readOnly"
+                 is-delete="vm.isDelete">
+        <invoice-line-form invoice-line="vm.invoiceLine">
+        </invoice-line-form>
+    </modal-panel>
+</div>

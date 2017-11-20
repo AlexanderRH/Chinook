@@ -1,0 +1,283 @@
+﻿body {
+  background-color: #fff;
+  margin: 2rem 2rem;
+  padding-top: 5rem; }
+  @media (min-width: 768px) {
+    body {
+      margin-left: 5rem;
+      margin-right: 5rem; } }
+  body footer {
+    background: #000;
+    color: #fff;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 5px; }
+
+.album-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 100px; }
+  @media (min-width: 768px) {
+    .album-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 130px; } }
+  .album-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .album-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.artist-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 70px; }
+  @media (min-width: 768px) {
+    .artist-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 100px; } }
+  .artist-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .artist-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.customer-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 370px; }
+  @media (min-width: 768px) {
+    .customer-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 400px; } }
+  .customer-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .customer-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.employee-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 390px; }
+  @media (min-width: 768px) {
+    .employee-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 420px; } }
+  .employee-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .employee-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.genre-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 70px; }
+  @media (min-width: 768px) {
+    .genre-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 100px; } }
+  .genre-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .genre-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.invoice-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 270px; }
+  @media (min-width: 768px) {
+    .invoice-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 300px; } }
+  .invoice-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .invoice-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.invoice-line-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 160px; }
+  @media (min-width: 768px) {
+    .invoice-line-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 190px; } }
+  .invoice-line-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .invoice-line-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.media-type-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 90px; }
+  @media (min-width: 768px) {
+    .media-type-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 120px; } }
+  .media-type-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .media-type-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.playlist-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 90px; }
+  @media (min-width: 768px) {
+    .playlist-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 120px; } }
+  .playlist-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .playlist-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.playlist-track-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 120px; }
+  @media (min-width: 768px) {
+    .playlist-track-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 150px; } }
+  .playlist-track-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .playlist-track-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.track-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 270px; }
+  @media (min-width: 768px) {
+    .track-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 300px; } }
+  .track-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .track-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+
+.user-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-top: .5rem;
+  height: 190px; }
+  @media (min-width: 768px) {
+    .user-card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      height: 200px; } }
+  .user-card .buttons-controls {
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .user-card .buttons-controls {
+        padding-bottom: 1.3rem; } }
+

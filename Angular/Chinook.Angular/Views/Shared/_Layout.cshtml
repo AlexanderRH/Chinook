@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinook.Angular</title>
+    <environment names="Development, Production">
+        <link href="~/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+</head>
+<body ng-controller="applicationController as vm" ng-init="init('@ViewBag.WebApiUrl')">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a ui-sref="home" ui-sref-active="active" class="navbar-brand">Chinook.Angular</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a ng-if="!vm.validate()" ui-sref="login" ui-sref-active="active">Login</a></li>
+                    <li><a ng-if="vm.validate()" ng-click="vm.logout()" href="#" ui-sref-active="active">Logout</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="album" ui-sref-active="active">Album</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="artist" ui-sref-active="active">Artist</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="customer" ui-sref-active="active">Customer</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="employee" ui-sref-active="active">Employee</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="genre" ui-sref-active="active">Genre</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="invoice" ui-sref-active="active">Invoice</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="invoiceLine" ui-sref-active="active">InvoiceLine</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="mediaType" ui-sref-active="active">Media Type</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="playlist" ui-sref-active="active">Playlist</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="playlistTrack" ui-sref-active="active">PlaylistTrack</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="track" ui-sref-active="active">Track</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="user" ui-sref-active="active">User</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2017 - Chinook.Angular</p>
+        </footer>
+    </div>
+    <environment names="Development">
+        <script src="~/js/bootstrap.js"></script>
+        <script src="~/js/angular.js"></script>
+        <script src="~/js/app-site.js"></script>
+        <script src="~/js/app-chinook.js"></script>
+    </environment>
+    <environment names="Production">
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/angular.min.js"></script>
+        <script src="~/js/app-site.min.js"></script>
+        <script src="~/js/app-chinook.min.js"></script>
+    </environment>
+</body>
+</html>

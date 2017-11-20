@@ -7,6 +7,7 @@ AS
 BEGIN
 	SELECT
 		[InvoiceId]
+		,[CustomerId]
 		,[InvoiceDate]
 		,[BillingAddress]
 		,[BillingCity]
@@ -18,6 +19,7 @@ BEGIN
 		SELECT
 			ROW_NUMBER() OVER ( ORDER BY InvoiceId ) AS RowNum
 			,[InvoiceId]
+			,[CustomerId]
 			,[InvoiceDate]
 			,[BillingAddress]
 			,[BillingCity]
