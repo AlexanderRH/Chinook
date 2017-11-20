@@ -15,5 +15,6 @@ namespace Chinook.UnitOfWork
         IPlaylistRepository Playlist { get; }
         IPlaylistTrackRepository PlaylistTrack { get; }
         ITrackRepository Track { get; }
+        IUserRepository User { get; }
     }
 }

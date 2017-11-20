@@ -16,6 +16,7 @@ namespace Chinook.Repositories.Dapper.Chinook
         public IPlaylistRepository Playlist { get; private set; }
         public IPlaylistTrackRepository PlaylistTrack { get; private set; }
         public ITrackRepository Track { get; private set; }
+        public IUserRepository User { get; private set; }
 
         public ChinookUnitOfWork(string connectionString)
         {
@@ -30,6 +31,7 @@ namespace Chinook.Repositories.Dapper.Chinook
             Playlist = new PlaylistRepository(connectionString);
             PlaylistTrack = new PlaylistTrackRepository(connectionString);
             Track = new TrackRepository(connectionString);
+            User = new UserRepository(connectionString);
         }
     }
 }
