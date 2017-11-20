@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Chinook.WebApi.Controllers
 {
     [Produces("application/json")]
-    //[Authorize]
+    [Authorize]
     public class BaseController : Controller
     {
         protected IUnitOfWork _unit;

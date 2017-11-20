@@ -39,8 +39,6 @@ namespace Chinook.WebApi
                 );
 
             services.AddMvc();
-            //services.AddMvc().AddFluentValidation();
-            //services.AddTransient<IValidator<Customer>, CustomerValidator>();
 
             services.AddResponseCompression();
             services.Configure<GzipCompressionProviderOptions>
